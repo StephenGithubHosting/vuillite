@@ -13,7 +13,7 @@ import CurrentPost from './pages/Posts/CurrentPost/CurrentPost';
 import Browse from './pages/Browse/Browse';
 import Settings from './pages/Settings/Settings';
 import Login from './pages/loginorsignup/login/Login';
-import SignUp from './pages/loginorsignup/signup/signup';
+import SignUp from './pages/loginorsignup/signup/SignUp';
 function App() {
   
 
