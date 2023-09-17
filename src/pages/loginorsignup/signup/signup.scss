@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.signupWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    .signup{
+        background-color: rgb(18, 18, 18);
+        box-shadow: 0px 0px 5px 0px white;
+        border-radius: 30px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        .title{
+            position: relative;
+            bottom: 50px;
+            font-family: 'Lato';
+        }
+        .signUpForm{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            bottom: 20px;
+            .username, .email, .password {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                input{
+                    width: 70%;
+                    padding: 10px;
+                    margin: 5px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+        .buttonSignUp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                width: 150px;
+                height: 35px;
+                border-radius: 5px;
+                border: none;
+                background-color: black;
+                color: white;
+                font-family: monospace;
+                font-size: 125%;
+                font-weight: bolder;
+            }
+        }
+    }
+}

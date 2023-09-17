@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+.Navbar{
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  .pfp a{
+    margin: 0px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 13, 13);
+    padding: 8px;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    img{
+      width: 40px;
+    }
+    p{
+      margin-left: 10px;
+      font-size: 15px;
+      font-family: 'Lato';
+      padding: 2px;
+    }
+  }
+  .imageLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 170px;
+      height: 80px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+    h1{
+      margin: 10px;
+      font-family: 'Lato';
+      font-size: 30px;
+    }
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 20px;
+    a{
+      font-size: 20px;
+      color: white;
+      font-family: 'Lato';
+      margin: 10px;
+    }
+  }
+}
