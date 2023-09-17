@@ -5,7 +5,7 @@ import './App.scss';
 import Navbar from './components/navbar/Navbar';
 import { Typewriter } from 'react-simple-typewriter';
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/home/home';
+import Home from './pages/home/Home';
 import Chat from './pages/chats/Chat';
 import Posts from './pages/Posts/Posts';
 import NewPost from './pages/Posts/NewPost/NewPost';
