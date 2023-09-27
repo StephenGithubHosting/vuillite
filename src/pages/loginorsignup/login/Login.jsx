@@ -11,6 +11,8 @@ import { useEffect } from 'react';
 function Login() {
     const [emailBar, setEmailBar] = useState(null);
     const [passwordBar, setPasswordBar] = useState(null);
+    const [error, setError] = useState(null);
+    const [errorState, setErrorState] = useState(false);
     useEffect(() => {
         const listen = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -36,15 +38,19 @@ function Login() {
             .then((userCredential) => {
                 // Signed in 
                 const user = userCredential.user;
-                window.location.href ='/';
+                // window.location.href ='/';
                 // ...
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
+                setError(errorMessage);
+                setErrorState(true);
             });
     };
-
+    const handleError = () => {
+    
+    };
   return (
     <>
     <ParticleBackground></ParticleBackground>
@@ -62,6 +68,13 @@ function Login() {
                     <input type="password" placeholder='Password' onChange={(e)=>{handlePassword(e.target.value)}}/>
                 </div>
             </div>
+            {errorState
+            ?<div className="err">
+                <p>Email or password is incorrect.</p>
+            </div>
+
+            :null}
+         
                 <div className="button">
                     <button onClick={handleLogIn}>Log in.</button>
                 </div>
@@ -69,7 +82,7 @@ function Login() {
                     <Link to='/signup'>
                     <Typewriter
                     words={[`Don't have an account? Sign up.`]}
-                    loop={1}
+                loop={1}
                     cursor={true}
                     cursorBlinking={false}
                     ></Typewriter>

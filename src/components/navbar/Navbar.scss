@@ -15,7 +15,7 @@
     padding: 8px;
     border-radius: 10px;
     height: 50px;
-    width: 100px;
+    // width: 100px;
     cursor: pointer;
     img{
       width: 40px;
@@ -54,6 +54,48 @@
       color: white;
       font-family: 'Lato';
       margin: 10px;
+    }
+  }
+}
+
+@media screen and (max-width:565px){
+  .Navbar{
+    .pfp a{
+      p{
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:484px) {
+  .Navbar {
+    .pfp a {
+      p {
+        display: none;
+      }
+    }
+    .imageLogo{
+      img{
+        width: 125px;
+        height: auto;
+      }
+    }
+    .links {
+      a{
+        font-size: 15px;
+      }
+      .pfp{
+        a{
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          img{
+            width: 35px;
+          }
+        }
+      }
     }
   }
 }

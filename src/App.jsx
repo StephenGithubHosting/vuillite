@@ -14,12 +14,15 @@ import Browse from './pages/Browse/Browse';
 import Settings from './pages/Settings/Settings';
 import Login from './pages/loginorsignup/login/Login';
 import SignUp from './pages/loginorsignup/signup/SignUp';
+import PasswordChange from './pages/change/password/PasswordChange';
+import EmailChange from './pages/change/email/EmailChange';
 function App() {
   
 
   return (
     <>
           <Navbar></Navbar>
+        <p style={{position:"fixed", color:"white", zIndex:"71291", right:"0px", bottom:"0px", fontSize:"15px", fontFamily:"Lato"}}>Vuillite DEMO v0.34r25 CODENAME CROSSLAKE</p>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/chats' element={<Chat></Chat>}></Route>
@@ -32,10 +35,14 @@ function App() {
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/browse' element={<Browse/>}></Route>
         <Route path='/settings' element={<Settings/>}></Route>
+        <Route path='/change'>
+          <Route index></Route>
+          <Route path='/change/password' element={<PasswordChange></PasswordChange>}></Route>
+          <Route path='/change/email' element={<EmailChange></EmailChange>}></Route>
+        </Route>
       </Routes>
-        
     </>
   )
 }
 
-export default App
+export default App;

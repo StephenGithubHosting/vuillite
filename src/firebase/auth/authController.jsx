@@ -17,7 +17,8 @@ const AuthDetails = () => {
                 setAuthUser(user);
                 setMrs(user.uid);
                 const refUsers = ref(database, `users/${user.uid}`);
-                onValue(refUsers, (snapshot) => {
+            onValue(refUsers, (snapshot) => {
+                    console.log(user.uid)
                     console.log(snapshot.val())
                     setUserDOM(snapshot.val().username);
                 });

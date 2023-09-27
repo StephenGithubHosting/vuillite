@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
 import AuthDetails from '../../firebase/auth/authController';
 import defaultImage from './images/default.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faPlus, faHome, faMessage, faImage } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';``
+import { faMagnifyingGlass, faPlus, faHome, faMessage, faImage } from '@fortawesome/free-solid-svg-icons';``
 function Navbar() {
   return (
     <div className='Navbar'>

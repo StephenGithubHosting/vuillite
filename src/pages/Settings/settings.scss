@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mooli&display=swap');
+$darkerGray : rgb(14, 13, 13);
+$darkGray : rgb(6, 6, 6);
+
+.Settings{
+    background-color: $darkerGray;
+    display: flex;
+    // padding: 10px;
+    // position: fixed;
+    width: 100%;
+    min-height: 90vh;
+    position: fixed;
+    .leftNavbar{
+        width: 20%;
+        background-color: $darkGray;
+        padding: 20px;
+        font-family: 'Mooli';
+        .account, .profile, .privacy, .advanced, .signout{
+            cursor: pointer;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            h1{
+                font-size: 25px;
+                margin: 10px;
+                width: 110px;
+            }
+            svg{
+                font-size: 150%;
+            }
+        }
+    }
+    .contentEdit{
+        display: flex;
+        width: 79%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Mooli';
+        .accountSettings{
+            border-radius: 20px;
+            width: 70%;
+            // height: 60%;
+            background-color: $darkGray;
+            padding: 30px;
+            font-size: 15px;
+            .accountDetails{
+                border-radius: 20px;
+                background-color: $darkerGray;
+                padding: 30px;
+                height: 70%;
+                .buttonEdit{
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    padding: 3px;
+                    padding-top: 50px;
+                    button{
+                        // width: 75px;
+                        font-size: 120%;
+                        font-family: monospace;
+                        background-color: $darkGray;
+                        color: white;
+                        border-radius: 10px;
+                        border: none;
+                        box-shadow: 0px 0px 3px 0px white;
+                        padding: 5px;
+                        padding: 10px;
+                        margin: 0px 20px 10px 0px;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
